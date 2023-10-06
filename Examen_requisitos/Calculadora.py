@@ -1,23 +1,20 @@
-
-def suma(a, b):
-    return a + b
-
-# F
-def resta(a, b):
-    return a - b
-
-
-def multiplicacion(a, b):
-    return a * b
-
-
-def division(a, b):
+#Funcion 1
+def suma(A, B):
+    return A + B
+#Funcion 2
+def resta(A, B):
+    return A - B
+#Funcion 3
+def multiplicacion(A, B):
+    return A * B
+#Funcion 4
+def division(A, B):
     if b == 0:
         return "No se puede dividir por cero"
     else:
-        return a / b
+        return A / B
 
-# Menú de la calculadora
+# Este es el menu de la calculadora 
 while True:
     print("Opciones:")
     print("1. Sumar")
@@ -26,22 +23,22 @@ while True:
     print("4. Dividir")
     print("5. Salir")
     
-    opcion = input("Elije una opción (1/2/3/4/5): ")
+    opcion = input("Elije la opcion que tu necesites(1,2,3,4,5): ")
     
     if opcion == '5':
-        print("¡Hasta luego!")
+        print("¡Hasta la proxima!")
         break
     
-    num1 = float(input("Digite el primer número: "))
-    num2 = float(input("Digite el segundo número: "))
+    numer1 = float(input("Digite el primer numero: "))
+    numer2 = float(input("Digite el segundo número: "))
     
     if opcion == '1':
-        print("Resultado:", suma(num1, num2))
+        print("Resultado:", suma(numer1, numer2))
     elif opcion == '2':
-        print("Resultado:", resta(num1, num2))
+        print("Resultado:", resta(numer1, numer2))
     elif opcion == '3':
-        print("Resultado:", multiplicacion(num1, num2))
+        print("Resultado:", multiplicacion(numer1, numer2))
     elif opcion == '4':
-        print("Resultado:", division(num1, num2))
+        print("Resultado:", division(numer1, numer2))
     else:
-        print("Opción no válida. Por favor, elija una opción válida (1/2/3/4/5).")
+        print("Opción no válida. Por favor, elija una opción válida (1,2,3,4,5).")
